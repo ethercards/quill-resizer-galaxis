@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Quill Resize Module Demo</title>
+  <style>
+    body {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    .editor-box {
+      height: 600px;
+      padding-top: 42px;
+      margin: 0 auto;
+    }
+
+    .editor-box .ql-toolbar {
+      margin-top: -42px;
+    }
+
+    .editor-box .ql-container {
+      overflow: hidden;
+    }
+
+    .editor-box .ql-editor img {
+      cursor: default !important;
+    }
+
+    .buttons {
+      margin: 1em 0 2em;
+    }
+
+    .btn {
+      padding: 3px .5em;
+    }
+
+    /* for active resize element */
+    .ql-editor .active {
+      outline: 2px solid rgba(5, 145, 255, 0.4);
+    }
+
+    /* for selected element */
+    .ql-editor .selected {
+      opacity: .5;
+    }
+
+    #result {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Quill Resize Module Demo</h1>
+  <div class="editor-box">
+    <div id="editor">
+      <p>Click target to resize.</p>
+      <p><img src="https://i.ytimg.com/vi/Fp5ghKduTK8/hq720.jpg" width="450"></p>
+      <p><br></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vYD1cSQ8jAY?si=DZYEYsGyDlciQRBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><br></p>
+      <p>Try to press left/right key around the placeholder.</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="btn btn-html">getHtml</button>
+    <button class="btn btn-content">getContent</button>
+    <button class="btn btn-text">getText</button>
+    &nbsp;&nbsp;
+    <button class="btn btn-undo">undo</button>
+    <button class="btn btn-redo">redo</button>
+  </div>
+  <textarea id="result" rows="10"></textarea>
+</body>
+
+</html>

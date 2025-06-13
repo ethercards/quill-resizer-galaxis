@@ -86,7 +86,7 @@ export default class Resize extends BaseModule {
   }
 
   calcSize(evt, limit = {}) {
-    console.log(limit);
+    //console.log(limit);
     // update size
     const deltaX = evt.clientX - this.dragStartX;
     const deltaY = evt.clientY - this.dragStartY;

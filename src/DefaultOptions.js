@@ -16,8 +16,8 @@ export default {
     video: {
       attribute: ["width", "height"],
       limit: {
-        minWidth: 200,
-        ratio: 0.5625,
+        minWidth: 200 /* ,
+        ratio: 0.5625, */,
       },
     },
   },
